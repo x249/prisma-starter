@@ -1,4 +1,4 @@
-# Prisma Starter 🌠
+# 🌠 Prisma Starter
 
 GraphQL API w/ TypeScript + Prisma
 
