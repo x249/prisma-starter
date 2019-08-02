@@ -1,0 +1,37 @@
+{
+	"name": "prisma-starter",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "npm-run-all --parallel start playground",
+		"start": "nodemon -e ts,graphql -x ts-node -r dotenv/config src/index.ts",
+		"playground": "graphql playground",
+		"build": "rm -rf dist && graphql codegen && tsc",
+		"prisma": "prisma",
+		"resolver-interfaces": "graphql-resolver-codegen interfaces -s src/schema.graphql -o ./src/generated/resolvers.ts -f",
+		"resolver-scaffold": "graphql-resolver-codegen scaffold -s ./src/schema.graphql -o ./src/resolvers/ -g typescript -i ./src/generated/resolvers.ts -f",
+		"resolver-codegen": "npm-run-all resolver-interfaces resolver-scaffold"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"graphql": "^14.4.2",
+		"graphql-tag": "^2.10.1",
+		"graphql-tools": "^4.0.5",
+		"graphql-yoga": "^1.18.0",
+		"jsonwebtoken": "^8.5.1",
+		"prisma-binding": "^2.3.15",
+		"prisma-client-lib": "^1.34.1"
+	},
+	"devDependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"@types/jsonwebtoken": "^8.3.2",
+		"@types/node": "^12.6.2",
+		"dotenv": "^8.0.0",
+		"graphql-cli": "^3.0.12",
+		"graphql-resolver-codegen": "^0.2.4",
+		"nodemon": "^1.19.1",
+		"npm-run-all": "^4.1.5",
+		"prisma": "^1.34.3",
+		"ts-node": "^8.3.0",
+		"typescript": "^3.5.3"
+	}
+}

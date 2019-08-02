@@ -1,0 +1,47 @@
+# import * from "./generated/prisma.graphql"
+
+type Query {
+	todos: [Todo!]!
+	userTodos(username: String!): [Todo!]!
+}
+
+type Mutation {
+	# Authentication
+	signup(username: String!, email: String!, password: String!): AuthPayload!
+	signin(username: String!, password: String!): AuthPayload!
+}
+
+type AuthPayload {
+	token: String!
+	user: User!
+}
+
+type MutationResult {
+	success: Boolean!
+}
+
+type User {
+	id: ID!
+	username: String!
+	email: String!
+	password: String!
+	todos: [Todo]
+	createdAt: DateTime
+	updatedAt: DateTime
+}
+
+type Todo {
+	id: ID!
+	text: String!
+	category: CATEGORY!
+	createdAt: DateTime
+	updatedAt: DateTime
+}
+
+enum CATEGORY {
+	HOME
+	WORK
+	DEVELOPMENT
+	RESEARCH
+	LIFE
+}

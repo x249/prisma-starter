@@ -1,0 +1,26 @@
+type User {
+	id: ID! @id
+	username: String! @unique
+	email: String! @unique
+	password: String!
+	todos: [Todo!] @relation(name: "UserToTodo", link: INLINE, onDelete: CASCADE)
+	createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type Todo {
+	id: ID!
+	text: String!
+  user: User! @relation(name: "UserToTodo", onDelete: SET_NULL)
+	category: CATEGORY!
+	createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+enum CATEGORY {
+	HOME
+  WORK
+  DEVELOPMENT
+  RESEARCH
+  LIFE
+}
