@@ -2,6 +2,8 @@
 
 GraphQL API w/ TypeScript + Prisma
 
+> Contributions are welcomed! Just fork and submit a PR
+
 ## Startup
 
 ```bash
@@ -24,3 +26,7 @@ APP_SECRET="APP_SECRET_HERE"
 PRISMA_MANAGEMENT_API_SECRET="MGMT_SECRET_HERE" # OPTIONAL
 
 ```
+
+## License
+
+MIT
