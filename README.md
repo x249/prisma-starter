@@ -11,8 +11,8 @@ GraphQL API w/ TypeScript + Prisma
 * TypeScript >= 3.3.4
 * Node >= 11.15.0
 * Images:
- * prismagraphql/prisma:1.34
- * postgres
+	* prismagraphql/prisma:1.34
+	* postgres
 
 ## Startup
 
