@@ -51,4 +51,4 @@ PRISMA_MANAGEMENT_API_SECRET="MGMT_SECRET_HERE" # OPTIONAL
 
 ## License
 
-MIT &copy; Osama Adil
+GPLv3 &copy; Osama Adil
