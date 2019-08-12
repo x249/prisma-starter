@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"sourceMap": true,
+		"outDir": "dist",
+		"strict": false,
+		"lib": ["esnext", "dom"]
+	},
+	"include": ["src"]
+}
