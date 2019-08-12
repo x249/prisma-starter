@@ -6,7 +6,11 @@ GraphQL API w/ TypeScript + Prisma
 
 ## About
 
-It took me a while to find a way to implement type-safety, ORM tooling and GraphQL together in a backend. After discovering that [Prisma](https://www.prisma.io/) exists, I found that it was incredibly easy and intuitive to setup. 
+It took me a while to find a way to implement type-safety, ORM tooling and GraphQL together in a backend. After discovering that [Prisma](https://www.prisma.io/) exists, I found that it was incredibly easy and intuitive to setup.
+
+## Structure
+
+Two folders are there by default; prisma & src. In the prisma folder, you'll find all your needs for the datamodel of the db engine and the prisma configuration file. The src folder contains the main entry and schema files, resolvers and generated files from the prisma datamodel.
 
 ## Requirements
 
