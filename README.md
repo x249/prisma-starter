@@ -18,13 +18,13 @@ GraphQL API w/ TypeScript + Prisma
 
 ```bash
 
-docker-compose -d up # Download images and start them
+$ docker-compose -d up # Download images and start them
 
-prisma deploy # Deploy the db schema generated from the datamodel
+$ prisma deploy # Deploy the db schema generated from the datamodel
 
-npm run dev # Development @ localhost:4000
+$ npm run dev # Development @ localhost:4000
 
-npm run build # Build TS -> ./dist
+$ npm run build # Build TS -> ./dist
 
 ```
 
