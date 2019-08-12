@@ -4,6 +4,16 @@ GraphQL API w/ TypeScript + Prisma
 
 > Contributions are welcomed! Just fork and submit a PR
 
+## Requirements
+
+* Docker >= 19.03.1
+* Docker Compose >= 1.24.0
+* TypeScript >= 3.3.4
+* Node >= 11.15.0
+* Images:
+ * prismagraphql/prisma:1.34
+ * postgres
+
 ## Startup
 
 ```bash
