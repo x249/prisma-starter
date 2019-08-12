@@ -4,6 +4,10 @@ GraphQL API w/ TypeScript + Prisma
 
 > Contributions are welcomed! Just fork and submit a PR
 
+## About
+
+It took me a while to find a way to implement type-safety, ORM tooling and GraphQL together in a backend. After discovering that [Prisma](https://www.prisma.io/) exists, I found that it was incredibly easy and intuitive to setup. 
+
 ## Requirements
 
 * Docker >= 19.03.1
